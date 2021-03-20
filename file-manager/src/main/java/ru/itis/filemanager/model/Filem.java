@@ -4,25 +4,30 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import ru.itis.filemanager.dto.Role;
 
 import javax.persistence.*;
+import java.sql.Blob;
 
 @Entity
+@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder
-public class Userm {
+public class Filem {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    Long id;
 
-    @Column(unique = true)
-    private String login;
+    boolean deleted;
 
-    private String pass;
-    private Role role;
+    String actualName;
 
-    private Integer size;
+    String mimeType;
+
+    Long size;
+
+    @Lob
+    private Blob data;
+
 }
