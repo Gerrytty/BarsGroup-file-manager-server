@@ -64,8 +64,11 @@ public class SignInService {
 
     public Userm signUp(SignUpDto signUpDto) {
 
+        System.out.println(signUpDto);
+
         Userm user = Userm.builder()
                 .login(signUpDto.getLogin())
+                .name(signUpDto.getName())
                 .pass(passwordEncoder.encode(signUpDto.getPassword()))
                 .role(Role.USER)
                 .build();

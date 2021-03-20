@@ -23,7 +23,12 @@ public class SignInController {
 
     @PostMapping("/auth")
     public ResponseEntity<SignInResponse> signIn(@RequestBody SignInDto signInDto) throws AccessDeniedException {
-        return ResponseEntity.ok(signInService.signIn(signInDto));
+
+        System.out.println(signInDto);
+
+        return null;
+
+//        return ResponseEntity.ok(signInService.signIn(signInDto));
     }
 
     @PostMapping("/reg")

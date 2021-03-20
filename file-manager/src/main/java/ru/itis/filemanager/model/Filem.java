@@ -20,14 +20,15 @@ public class Filem {
     Long id;
 
     boolean deleted;
-
     String actualName;
-
     String mimeType;
-
     Long size;
 
     @Lob
     private Blob data;
+
+//    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+//    @JoinColumn(name = "author")
+//    private Userm userm;
 
 }

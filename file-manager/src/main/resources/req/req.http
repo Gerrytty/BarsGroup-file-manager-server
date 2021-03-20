@@ -3,8 +3,9 @@ POST http://localhost:8080/reg
 Content-Type: application/json
 
 {
-  "login": "yuliya@gmail.com",
-  "password": "123"
+  "login": "aaa@gmail.com",
+  "password": "123",
+  "name": "aaa"
 }
 
 ###
@@ -13,8 +14,9 @@ POST http://localhost:8080/auth
 Content-Type: application/json
 
 {
-  "login": "yuliya@gmail.com",
-  "password": "123"
+  "login": "aaa@gmail.com",
+  "password": "123",
+  "name": "aaa"
 }
 
 ###

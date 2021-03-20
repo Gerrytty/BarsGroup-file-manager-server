@@ -26,7 +26,6 @@ public class UsersController {
     public ResponseEntity<?> getUser(@PathVariable Long id) {
 
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-
         UserDetailsImpl userDetails = (UserDetailsImpl) authentication.getDetails();
 
         if (!id.equals(userDetails.getUserId())) {

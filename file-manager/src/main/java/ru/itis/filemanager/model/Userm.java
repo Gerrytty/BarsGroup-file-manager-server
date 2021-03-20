@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Builder
 public class Userm {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @Column(unique = true)
