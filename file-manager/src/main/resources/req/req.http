@@ -16,3 +16,11 @@ Content-Type: application/json
   "login": "yuliya@gmail.com",
   "password": "123"
 }
+
+###
+
+GET http://localhost:8080/test/t/t/t
+
+###
+GET http://localhost:8080/users/1
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiIxIiwibG9naW4iOiJ5dWxpeWFAZ21haWwuY29tIiwicm9sZSI6IlVTRVIifQ.HtFrD0yzRgiqc-_WhCjNl-mC-xXfqKwIhcieScIjuqw

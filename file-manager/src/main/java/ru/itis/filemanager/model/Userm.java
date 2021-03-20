@@ -25,4 +25,6 @@ public class Userm {
     private Role role;
 
     private Integer size;
+
+    private String name;
 }

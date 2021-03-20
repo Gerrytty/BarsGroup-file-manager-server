@@ -8,6 +8,7 @@ import ru.itis.filemanager.dto.SignInResponse;
 import ru.itis.filemanager.dto.SignUpDto;
 import ru.itis.filemanager.service.SignInService;
 
+import javax.servlet.http.HttpServletRequest;
 import java.nio.file.AccessDeniedException;
 
 @RestController
@@ -31,6 +32,15 @@ public class SignInController {
         signInService.signUp(signUpDto);
 
         return ResponseEntity.ok("200");
+
+    }
+
+    @GetMapping("/test/**")
+    public void g(HttpServletRequest request) {
+
+        String uri = request.getRequestURI();
+
+        System.out.println(uri);
 
     }
 
